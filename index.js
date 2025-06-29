@@ -72,7 +72,7 @@ async function addParty(party) {
 
 async function removeParty(id) {
   try {
-    await fetch(`${API}/${id}`, {
+    await fetch(`${API}/events/${id}`, {
       method: "DELETE",
     });
     selectedParty = undefined;
